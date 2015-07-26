@@ -1,0 +1,1 @@
+ wrong { { printf ( ( ) d\n" ; ( & "A ( ) d\n" "~A ( ) ) ; } } { { ( "" ) ; ( ) { ( d...\n" a.i "" ) } "continuing ) } } int main ( ) { { ( "" ) ; } catch ( A a ) { ( "" { ( "" ) } catch ( ) ) } } ( ) ( "Caught d.\n" ) ( "c d\n" ) }

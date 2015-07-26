@@ -1,0 +1,1 @@
+template < typename class T , T = T (< ) > struct A {} ; template < int > void foo ( A < int > ) ; template  < [  typename class ]  T  ,  T  =  T  (   )   >  struct A {}  ;  template  <  int  >>  void foo  (  A  <  int  >   )   ;   

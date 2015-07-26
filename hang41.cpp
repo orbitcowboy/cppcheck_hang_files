@@ -1,0 +1,1 @@
+ class[ d0_Collection_Base ; template <] class T > class d0_List : virtual public { : d0_List ( ) ; template class > ( Input_Iterator first , Input_Iterator last ) } ( ) { const d0_List < int > l4 ( ) ; }

@@ -1,0 +1,1 @@
+ { ( d\n" ( ) d\n" ) ; } { ( ) ( ) { d...\n" ) "continuing } } int main ( ) { ( catch ( A a ) { ( { } catch ( ) ) } ( ) ) ( "" ) }
