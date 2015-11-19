@@ -1,0 +1,28 @@
+Checking hang95.cpp...
+^C
+Program received signal SIGINT, Interrupt.
+0x000000000078bdee in std::char_traits<char>::length (__s=0xa56c3c ",")
+    at /usr/include/c++/5/bits/char_traits.h:263
+263	      { return __builtin_strlen(__s); }
+(gdb) bt
+#0  0x000000000078bdee in std::char_traits<char>::length (__s=0xa56c3c ",")
+    at /usr/include/c++/5/bits/char_traits.h:263
+#1  0x000000000078cce3 in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::compare (this=0xd768d8, __s=0xa56c3c ",")
+    at /usr/include/c++/5/bits/basic_string.tcc:1398
+#2  0x000000000078c5a7 in std::operator==<char, std::char_traits<char>, std::allocator<char> > (__lhs=",", __rhs=0xa56c3c ",")
+    at /usr/include/c++/5/bits/basic_string.h:4934
+#3  0x00000000008e8a0a in Library::isNotLibraryFunction (this=0x7fffffffd478, 
+    ftok=0xd75d60) at lib/library.cpp:818
+#4  0x00000000009d068d in Tokenizer::simplifyAttribute (this=0x7fffffffbee0)
+    at lib/tokenize.cpp:9051
+#5  0x00000000009b4ba3 in Tokenizer::simplifyTokenList1 (this=0x7fffffffbee0, 
+    FileName=0xd6fb70 "hang95.cpp") at lib/tokenize.cpp:3480
+#6  0x00000000009aa183 in Tokenizer::tokenize (this=0x7fffffffbee0, code=..., 
+    FileName=0xd6fb70 "hang95.cpp", configuration="", noSymbolDB_AST=false)
+    at lib/tokenize.cpp:1723
+#7  0x00000000008cb436 in CppCheck::checkFile (this=0x7fffffffd1a0, 
+    code="f(a,b,c,d)float [ a[],d;int ] b[],c;{}\n", 
+    FileName=0xd6fb70 "hang95.cpp", 
+    checksums=std::__debug::set with 0 elements, 
+    internalErrorFound=@0x7fffffffc3ab: false) at lib/cppcheck.cpp:337
+#8  0x00000000008ca215 in CppCheck::processFile (this=0x7fffffffd1a0, 
