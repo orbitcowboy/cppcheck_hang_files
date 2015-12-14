@@ -1,0 +1,1 @@
+! This used to L"  ICE as we chose the wrong type for the ! temporary to hold type L"  % var ! fortran / 18157 program testcase_fold type : : struct real : : var ! its julian sec end type struct type ( struct ) , dimension ( : ) , pointer : : mystruct mystruct ( 1 : 2 ) % var = mystruct ( 2 : 3 ) % var END Program testcase_fold 
